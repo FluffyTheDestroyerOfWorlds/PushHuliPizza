@@ -22,6 +22,7 @@
 		64AA30BB1F66199C0091763F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64AA30BE1F66199C0091763F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64AA30C01F66199C0091763F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64AA30C61F6619AF0091763F /* PushHuliPizza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushHuliPizza.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		64AA30B31F66199C0091763F /* PushHuliPizza */ = {
 			isa = PBXGroup;
 			children = (
+				64AA30C61F6619AF0091763F /* PushHuliPizza.entitlements */,
 				64AA30B41F66199C0091763F /* AppDelegate.swift */,
 				64AA30B61F66199C0091763F /* ViewController.swift */,
 				64AA30B81F66199C0091763F /* Main.storyboard */,
@@ -98,6 +100,14 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 3S26T8E83J;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -263,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushHuliPizza/PushHuliPizza.entitlements;
 				DEVELOPMENT_TEAM = 3S26T8E83J;
 				INFOPLIST_FILE = PushHuliPizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -276,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushHuliPizza/PushHuliPizza.entitlements;
 				DEVELOPMENT_TEAM = 3S26T8E83J;
 				INFOPLIST_FILE = PushHuliPizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
